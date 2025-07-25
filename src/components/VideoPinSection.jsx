@@ -1,6 +1,7 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { useMediaQuery } from "react-responsive";
+import { vidoepin } from "../constants";
 
 
 const VideoPinSection = () => {
@@ -37,7 +38,9 @@ const VideoPinSection = () => {
         }}
         className="size-full video-box"
       >
-        <video src="https://res.cloudinary.com/doudmyt6j/video/upload/v1753454701/pin-video_jqpdx2.mp4" playsInline muted loop autoPlay />
+        <video src={vidoepin} playsInline muted loop autoPlay
+         preload="auto" 
+        />
 
         <div className="abs-center md:scale-100 scale-200">
           <img src="/images/circle-text.svg" alt="" className="spin-circle" />
@@ -55,3 +58,12 @@ const VideoPinSection = () => {
 };
 
 export default VideoPinSection;
+
+
+
+
+
+
+
+
+

@@ -86,5 +86,8 @@ const flavorlists = [
       translation: "translate-y-[10%]",
     },
   ];
-  
+
+  export const vidoepin = "https://res.cloudinary.com/doudmyt6j/video/upload/v1753454701/pin-video_jqpdx2.mp4"
+
+  export const herobg = "https://res.cloudinary.com/doudmyt6j/video/upload/v1753454692/hero-bg_pifvho.mp4"
   export { flavorlists, nutrientLists, cards };
