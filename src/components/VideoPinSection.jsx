@@ -1,6 +1,7 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { useMediaQuery } from "react-responsive";
+import pinvideo from "../assets/videos/pin-video.mp4";
 
 const VideoPinSection = () => {
   const isMobile = useMediaQuery({
@@ -36,7 +37,7 @@ const VideoPinSection = () => {
         }}
         className="size-full video-box"
       >
-        <video src="/videos/pin-video.mp4" playsInline muted loop autoPlay />
+        <video src={pinvideo} playsInline muted loop autoPlay />
 
         <div className="abs-center md:scale-100 scale-200">
           <img src="/images/circle-text.svg" alt="" className="spin-circle" />

@@ -2,6 +2,7 @@ import { useGSAP } from "@gsap/react"
 import gsap from "gsap"
 import { SplitText } from "gsap/all"
 import { useMediaQuery } from "react-responsive";
+import herobg from "../assets/videos/hero-bg.mp4";
 
 const HeroSection = () => {
 
@@ -69,7 +70,7 @@ heroTL.to(".hero-container",{
       ) 
       
       : (
-        <video src="/videos/hero-bg.mp4"
+        <video src={herobg}
         autoPlay muted playsInline
         className="absolute insert-0 w-full h-full object-cover"/>
       )
