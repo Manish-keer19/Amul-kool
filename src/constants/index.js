@@ -1,10 +1,4 @@
-import f1 from "../assets/videos/f1.mp4"
-import f2 from "../assets/videos/f2.mp4"
-import f3 from "../assets/videos/f3.mp4"
-import f4 from "../assets/videos/f4.mp4"
-import f5 from "../assets/videos/f5.mp4"
-import f6 from "../assets/videos/f6.mp4"
-import f7 from "../assets/videos/f7.mp4"
+
 
 const flavorlists = [
     {
@@ -45,47 +39,47 @@ const flavorlists = [
   
   const cards = [
     {
-      src: f1,
+      src: "https://res.cloudinary.com/doudmyt6j/video/upload/v1753454690/f1_ymcetk.mp4",
       rotation: "rotate-z-[-10deg]",
       name: "Madison",
       img: "/images/p1.png",
       translation: "translate-y-[-5%]",
     },
     {
-      src: f2,
+      src: "https://res.cloudinary.com/doudmyt6j/video/upload/v1753454676/f2_zxqhdu.mp4",
       rotation: "rotate-z-[4deg]",
       name: "Alexander",
       img: "/images/p2.png",
     },
     {
-      src: f2,
+      src: "https://res.cloudinary.com/doudmyt6j/video/upload/v1753454691/f7_lfbmvg.mp4",
       rotation: "rotate-z-[-4deg]",
       name: "Andrew",
       img: "/images/p3.png",
       translation: "translate-y-[-5%]",
     },
     {
-      src: f3,
+      src: "https://res.cloudinary.com/doudmyt6j/video/upload/v1753454695/f6_a9pair.mp4",
       rotation: "rotate-z-[4deg]",
       name: "Bryan",
       img: "/images/p4.png",
       translation: "translate-y-[5%]",
     },
     {
-      src: f4,
+      src: "https://res.cloudinary.com/doudmyt6j/video/upload/v1753454689/f4_r0oioa.mp4",
       rotation: "rotate-z-[-10deg]",
       name: "Chris",
       img: "/images/p5.png",
     },
     {
-      src: f5,
+      src: "https://res.cloudinary.com/doudmyt6j/video/upload/v1753454698/f3_ff5gyr.mp4",
       rotation: "rotate-z-[4deg]",
       name: "Devante",
       img: "/images/p6.png",
       translation: "translate-y-[5%]",
     },
     {
-      src: f6,
+      src: "https://res.cloudinary.com/doudmyt6j/video/upload/v1753454699/f5_unxh3f.mp4",
       rotation: "rotate-z-[-3deg]",
       name: "Melisa",
       img: "/images/p7.png",
