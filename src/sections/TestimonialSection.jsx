@@ -55,15 +55,35 @@ const TestimonialSection = () => {
     });
   });
 
-  const handlePlay = (index) => {
-    const video = vdRef.current[index];
-    video.play();
-  };
+  // const handlePlay = (index) => {
+  //   const video = vdRef.current[index];
+  //   video.play();
+  // };
 
-  const handlePause = (index) => {
-    const video = vdRef.current[index];
+  // const handlePause = (index) => {
+  //   const video = vdRef.current[index];
+  //   video.pause();
+  // };
+
+
+
+  const handlePlay = (index) => {
+  const video = vdRef.current[index];
+  console.log("Trying to play video:", video);
+  if (video) {
+    video.play().catch((err) => {
+      console.error("Video play error:", err.name, err.message);
+    });
+  }
+};
+
+const handlePause = (index) => {
+  const video = vdRef.current[index];
+  if (video) {
     video.pause();
-  };
+  }
+};
+
 
   return (
     <section className="testimonials-section">
@@ -75,21 +95,44 @@ const TestimonialSection = () => {
 
       <div className="pin-box">
         {cards.map((card, index) => (
-          <div
-            key={index}
-            className={`vd-card ${card.translation} ${card.rotation}`}
-            onMouseEnter={() => handlePlay(index)}
-            onMouseLeave={() => handlePause(index)}
-          >
-            <video
-              ref={(el) => (vdRef.current[index] = el)}
-              src={card.src}
-              playsInline
-              muted
-              loop
-              className="size-full object-cover"
-            />
-          </div>
+//           <div
+//             key={index}
+//             className={`vd-card ${card.translation} ${card.rotation}`}
+//             onMouseEnter={() => handlePlay(index)}
+//             onMouseLeave={() => handlePause(index)}
+//           >
+//             <video
+//   ref={(el) => (vdRef.current[index] = el)}
+//   src={card.src}
+//   playsInline
+//   muted
+//   autoPlay
+//   loop
+//   className="size-full object-cover"
+// />
+
+//           </div>
+
+
+
+<div
+  key={index}
+  className={`vd-card ${card.translation} ${card.rotation} w-[300px] h-[500px] bg-black`}
+  onMouseEnter={() => handlePlay(index)}
+  onMouseLeave={() => handlePause(index)}
+>
+  <video
+    ref={(el) => (vdRef.current[index] = el)}
+    src={card.src}
+    playsInline
+    muted
+    autoPlay
+    loop
+    // controls
+    className="w-full h-full object-cover block border-2 border-blue-500"
+  />
+</div>
+
         ))}
       </div>
     </section>
